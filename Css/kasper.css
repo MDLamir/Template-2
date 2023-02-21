@@ -195,6 +195,7 @@ header .container nav ul li a:hover {
     color: #00c7fc;
     border-bottom: 1px solid #00c7fc;
 }
+
 /* end header */
 /* start landing */
 .landing {
@@ -256,7 +257,7 @@ header .container nav ul li a:hover {
     right: 30px;
 }
 
- .landing .icon {
+.landing .icon {
     width: 100%;
     z-index: 2;
     position: absolute;
@@ -277,6 +278,7 @@ header .container nav ul li a:hover {
     border: none;
     background-color: var(--main-color);
 }
+
 /* end landing */
 /* start services */
 .services {
@@ -285,14 +287,14 @@ header .container nav ul li a:hover {
 
 @media (min-width:768px) {
     .services .container {
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-column-gap: 60px;
-    grid-row-gap: 40px;
-    max-width: 100%;
-}
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        grid-column-gap: 60px;
+        grid-row-gap: 40px;
+        max-width: 100%;
+    }
 }
 
 .services .container .col {
@@ -326,6 +328,7 @@ header .container nav ul li a:hover {
     color: rgb(0 0 0 / 60%);
     max-width: 100%;
 }
+
 /* end services */
 /* start landingtwo */
 .landing-two {
@@ -503,7 +506,7 @@ header .container nav ul li a:hover {
 
 /* end portfolio */
 /* start landingthree */
- .landing-three {
+.landing-three {
     position: relative;
 }
 
@@ -548,6 +551,7 @@ header .container nav ul li a:hover {
     color: white;
     text-transform: uppercase;
 }
+
 /* end landingthree */
 /* start about */
 .about {
@@ -563,17 +567,12 @@ header .container nav ul li a:hover {
 
 .about div img {
     position: relative;
-    bottom: -120px;
-    margin-top: -120px;
+    bottom: -82px;
+    margin-top: -82px;
     max-width: 100%;
+    width: 500px;
 }
 
-@media (max-width: 768px) {
-    .about div img  {
-        bottom: -60px;
-        margin-top: -60px;
-    }
-}
 /* end about */
 
 /* start landingfour */
@@ -642,6 +641,7 @@ header .container nav ul li a:hover {
         padding: var(--section-padding) 10px;
     }
 }
+
 /* end landingfour */
 /* start informations */
 .informations {
@@ -658,7 +658,7 @@ header .container nav ul li a:hover {
 
 .informations .container>* {
     flex-basis: calc(50% - 30px);
-    
+
 }
 
 .informations .container h3 {
@@ -728,16 +728,16 @@ header .container nav ul li a:hover {
 .informations .skills .range div {
     height: 30px;
     width: 100%;
-    background-image: linear-gradient(to right,var(--main-color),var(--main-color) 90%,#ddd 90%);
+    background-image: linear-gradient(to right, var(--main-color), var(--main-color) 90%, #ddd 90%);
     position: relative;
 }
 
 .informations .skills .range:nth-of-type(2) div {
-    background-image: linear-gradient(to right,var(--main-color),var(--main-color) 85%,#ddd 85%);
+    background-image: linear-gradient(to right, var(--main-color), var(--main-color) 85%, #ddd 85%);
 }
 
 .informations .skills .range:nth-of-type(3) div {
-    background-image: linear-gradient(to right,var(--main-color),var(--main-color) 80%,#ddd 80%);
+    background-image: linear-gradient(to right, var(--main-color), var(--main-color) 80%, #ddd 80%);
 }
 
 .informations .skills .range h4 {
@@ -772,12 +772,15 @@ header .container nav ul li a:hover {
 .range:nth-of-type(2) span::before {
     right: 15% !important;
 }
+
 .range:nth-of-type(2) span::after {
     right: 15%;
 }
+
 .range:nth-of-type(3) span::before {
     right: 20% !important;
 }
+
 .range:nth-of-type(3) span::after {
     right: 20%;
 }
@@ -811,6 +814,7 @@ header .container nav ul li a:hover {
         margin-bottom: 40px;
     }
 }
+
 /* end informations */
 /* start quote */
 .quote {
@@ -842,6 +846,7 @@ header .container nav ul li a:hover {
     display: block;
     margin-bottom: 20px;
 }
+
 /* end quote */
 /* start pricing */
 
@@ -940,7 +945,7 @@ header .container nav ul li a:hover {
     font-size: 20px;
 }
 
-.pricing .sent a{
+.pricing .sent a {
     display: inline-block;
     margin-top: 20px;
     background-color: var(--main-color);
@@ -1020,6 +1025,22 @@ header .container nav ul li a:hover {
     margin-left: 30px;
 }
 
+@media (max-width: 768px) {
+    .subscribe .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe .container form {
+        margin-bottom: 30px;
+    }
+
+    .subscribe form input[type="email"] {
+        width: 250px;
+    }
+
+}
+
 @media (max-width: 991px) {
     .subscribe .container {
         flex-direction: column;
@@ -1052,7 +1073,7 @@ header .container nav ul li a:hover {
     flex-basis: 70%;
 }
 
-.contact .contact-content >div:last-child {
+.contact .contact-content>div:last-child {
     margin-left: 30px;
 }
 
@@ -1081,11 +1102,11 @@ textarea {
     align-self: flex-end;
 }
 
-.contact .informatio > div{
+.contact .informatio>div {
     margin-bottom: 70px;
 }
 
-.contact .informatio h4{
+.contact .informatio h4 {
     text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: normal;
@@ -1139,7 +1160,7 @@ footer .container {
     color: white;
 }
 
-footer .container > *:not(:last-child){
+footer .container>*:not(:last-child) {
     margin-bottom: 40px;
 }
 
@@ -1149,15 +1170,15 @@ footer .container div {
 }
 
 
-footer .container div h4{
+footer .container div h4 {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: normal;
 }
 
-footer .container div .icons{
-    display: flex; 
+footer .container div .icons {
+    display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
